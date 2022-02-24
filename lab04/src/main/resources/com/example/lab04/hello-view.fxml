@@ -15,7 +15,7 @@
     <Label text = "Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <TextField promptText="Username" fx:id="Username" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
     <Label text = "Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-    <TextField promptText="Password" fx:id="Password" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <PasswordField promptText="Password" fx:id="Password" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
     <Label text = "Full Name:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
     <TextField promptText="Full Name" fx:id="FullName" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
     <Label text = "E-mail:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
