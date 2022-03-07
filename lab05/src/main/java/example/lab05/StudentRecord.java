@@ -26,32 +26,20 @@ public class StudentRecord {
         int numberGrade = (int) Math.round(mark);
         int quotient = numberGrade / 10;
 
-        String letterGrade;
-
         switch (quotient) {
             case 10:
-                return "A";
-            case 9:
-                // 90-99 is an A
-                letterGrade = "A";
-                break;
             case 8:
-                // 80-89 is a B
-                letterGrade = "B";
-                break;
+            case 9:
+                return "A";
             case 7:
-                // 70-79 is a C
-                letterGrade = "C";
-                break;
+                return "B";
             case 6:
-                // 60-69 is a D
-                letterGrade = "D";
-                break;
+                return "C";
+            case 5:
+                return "D";
             default:
-                // Anything 59 or below is an F
                 return "F";
         }
-        return letterGrade;
     }
 
     public String getStudentID() {
