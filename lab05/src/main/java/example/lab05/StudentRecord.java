@@ -26,20 +26,13 @@ public class StudentRecord {
         int numberGrade = (int) Math.round(mark);
         int quotient = numberGrade / 10;
 
-        switch (quotient) {
-            case 10:
-            case 8:
-            case 9:
-                return "A";
-            case 7:
-                return "B";
-            case 6:
-                return "C";
-            case 5:
-                return "D";
-            default:
-                return "F";
-        }
+        return switch (quotient) {
+            case 10, 8, 9 -> "A";
+            case 7 -> "B";
+            case 6 -> "C";
+            case 5 -> "D";
+            default -> "F";
+        };
     }
 
     public String getStudentID() {

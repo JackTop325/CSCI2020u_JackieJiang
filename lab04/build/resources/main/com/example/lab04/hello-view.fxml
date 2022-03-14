@@ -29,7 +29,6 @@
     <Button fx:id="submitButton" text = "Register" onAction="#RegisterButton" GridPane.columnIndex="0" GridPane.rowIndex="7" />
 </GridPane>
 
-
         <!--
         <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
               fx:controller="com.example.fxml_hello_demo.HelloController">
