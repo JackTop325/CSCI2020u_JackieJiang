@@ -10,7 +10,7 @@ import javafx.scene.chart.*;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 
-public class HelloApplication extends Application {
+public class Application extends javafx.application.Application {
 
     //Data for Bar Chart
     private static double[] avgHousingPricesByYear = {
