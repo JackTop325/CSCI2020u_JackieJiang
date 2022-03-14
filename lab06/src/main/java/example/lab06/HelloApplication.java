@@ -36,7 +36,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setTitle("Lab 06");
+        primaryStage.setTitle("Lab06");
         final CategoryAxis xAxis = new CategoryAxis();
         final NumberAxis yAxis = new NumberAxis();
         final BarChart<String,Number> bc = new BarChart<String,Number>(xAxis,yAxis);
@@ -79,7 +79,7 @@ public class HelloApplication extends Application {
                 new PieChart.Data(ageGroups[5], purchasesByAgeGroup[5]));
 
         final PieChart pieC = new PieChart(pieChartData);
-        pieC.setTitle("Age Groups Buying Stuff");
+        pieC.setTitle("Pie Chart");
 
 
         FlowPane root = new FlowPane();
