@@ -39,35 +39,34 @@ public class HelloApplication extends Application {
         primaryStage.setTitle("Lab06");
         final CategoryAxis xAxis = new CategoryAxis();
         final NumberAxis yAxis = new NumberAxis();
-        final BarChart<String,Number> bc = new BarChart<String,Number>(xAxis,yAxis);
-        bc.setTitle("Bar Chart");
+        final BarChart<String,Number> barChart = new BarChart<String,Number>(xAxis,yAxis);
+        barChart.setTitle("Bar Chart");
         xAxis.setLabel("Housing vs Commercial");
         yAxis.setLabel("Price");
 
         XYChart.Series chart1 = new XYChart.Series();
         chart1.setName("Housing");
-        chart1.getData().add(new XYChart.Data("2009", avgHousingPricesByYear[0]));
-        chart1.getData().add(new XYChart.Data("2010", avgHousingPricesByYear[1]));
-        chart1.getData().add(new XYChart.Data("2011", avgHousingPricesByYear[2]));
-        chart1.getData().add(new XYChart.Data("2012", avgHousingPricesByYear[3]));
-        chart1.getData().add(new XYChart.Data("2013", avgHousingPricesByYear[4]));
-        chart1.getData().add(new XYChart.Data("2014", avgHousingPricesByYear[5]));
-        chart1.getData().add(new XYChart.Data("2015", avgHousingPricesByYear[6]));
-        chart1.getData().add(new XYChart.Data("2016", avgHousingPricesByYear[7]));
+        chart1.getData().add(new XYChart.Data("2015", avgHousingPricesByYear[0]));
+        chart1.getData().add(new XYChart.Data("2016", avgHousingPricesByYear[1]));
+        chart1.getData().add(new XYChart.Data("2017", avgHousingPricesByYear[2]));
+        chart1.getData().add(new XYChart.Data("2018", avgHousingPricesByYear[3]));
+        chart1.getData().add(new XYChart.Data("2019", avgHousingPricesByYear[4]));
+        chart1.getData().add(new XYChart.Data("2020", avgHousingPricesByYear[5]));
+        chart1.getData().add(new XYChart.Data("2021", avgHousingPricesByYear[6]));
+        chart1.getData().add(new XYChart.Data("2022", avgHousingPricesByYear[7]));
 
         XYChart.Series chart2 = new XYChart.Series();
         chart2.setName("Commercial");
-        chart2.getData().add(new XYChart.Data("2009", avgCommercialPricesByYear[0]));
-        chart2.getData().add(new XYChart.Data("2010", avgCommercialPricesByYear[1]));
-        chart2.getData().add(new XYChart.Data("2011", avgCommercialPricesByYear[2]));
-        chart2.getData().add(new XYChart.Data("2012", avgCommercialPricesByYear[3]));
-        chart2.getData().add(new XYChart.Data("2013", avgCommercialPricesByYear[4]));
-        chart2.getData().add(new XYChart.Data("2014", avgCommercialPricesByYear[5]));
-        chart2.getData().add(new XYChart.Data("2015", avgCommercialPricesByYear[6]));
-        chart2.getData().add(new XYChart.Data("2016", avgCommercialPricesByYear[7]));
+        chart2.getData().add(new XYChart.Data("2015", avgCommercialPricesByYear[0]));
+        chart2.getData().add(new XYChart.Data("2016", avgCommercialPricesByYear[1]));
+        chart2.getData().add(new XYChart.Data("2017", avgCommercialPricesByYear[2]));
+        chart2.getData().add(new XYChart.Data("2018", avgCommercialPricesByYear[3]));
+        chart2.getData().add(new XYChart.Data("2019", avgCommercialPricesByYear[4]));
+        chart2.getData().add(new XYChart.Data("2020", avgCommercialPricesByYear[5]));
+        chart2.getData().add(new XYChart.Data("2021", avgCommercialPricesByYear[6]));
+        chart2.getData().add(new XYChart.Data("2022", avgCommercialPricesByYear[7]));
 
-
-        bc.getData().addAll(chart1,chart2);
+        barChart.getData().addAll(chart1,chart2);
 
 
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
@@ -78,14 +77,14 @@ public class HelloApplication extends Application {
                 new PieChart.Data(ageGroups[4], purchasesByAgeGroup[4]),
                 new PieChart.Data(ageGroups[5], purchasesByAgeGroup[5]));
 
-        final PieChart pieC = new PieChart(pieChartData);
-        pieC.setTitle("Pie Chart");
+        final PieChart pieChart = new PieChart(pieChartData);
+        pieChart.setTitle("Pie Chart");
 
 
         FlowPane root = new FlowPane();
-        root.getChildren().addAll(bc,pieC);
+        root.getChildren().addAll(barChart,pieChart);
 
-        primaryStage.setScene(new Scene(root, 1000, 400));
+        primaryStage.setScene(new Scene(root, 1000, 500));
         primaryStage.show();
     }
 
