@@ -1,7 +1,6 @@
 package example.lab06;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.collections.FXCollections;
@@ -10,7 +9,7 @@ import javafx.scene.chart.*;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 
-public class Application extends javafx.application.Application {
+public class Lab06Application extends Application {
 
     //Data for Bar Chart
     private static double[] avgHousingPricesByYear = {
