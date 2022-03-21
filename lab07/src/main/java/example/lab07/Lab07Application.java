@@ -34,7 +34,7 @@ public class Lab07Application extends Application {
                 }
             }
         }
-        //System.out.println(globalCount);
+        //System.out.println(weatherCount);
         int n = weatherCount.size();
         String[] weatherType = new String [n];
         int [] typeCount = new int [n];
