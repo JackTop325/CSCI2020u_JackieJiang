@@ -23,7 +23,7 @@ public class Controller implements Initializable {
     @FXML
     private TableView<StudentRecord> tableView;
 
-    public String currentFilename = "test.csv";
+    public String currentFilename = "main.csv";
     ObservableList<StudentRecord> marks = FXCollections.observableArrayList();
     @FXML
     private void clear(){
