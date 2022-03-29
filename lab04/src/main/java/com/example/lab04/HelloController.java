@@ -35,6 +35,5 @@ public class HelloController {
         E_mail.clear();
         Phone.clear();
         DoB.setValue(null);
-
     }
 }

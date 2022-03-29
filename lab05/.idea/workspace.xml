@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d27e75d-2ea6-4b63-9180-99dd061d9275" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Midterm/src/main/resources/example/midterm/MainScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Midterm/src/main/resources/example/midterm/Scene1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Midterm/src/main/resources/example/midterm/Scene2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Midterm/src/main/resources/example/midterm/Scene3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab08/src/main/java/example/lab08/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab06/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../lab06/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab06/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../lab06/.gradle/checksums/checksums.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TestImg/csci2020-code-main/csci2020-code-main/fxml_hello_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15505913" />
     <property name="project.structure.side.proportion" value="0.2" />
