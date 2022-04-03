@@ -70,8 +70,5 @@ public class Controller implements Initializable {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
-
-
     }
 }
